@@ -233,8 +233,8 @@ namespace StardewBrewery
         {
             if (Game1.dayOfMonth == 1)
             {
-                this.Helper.Content.InvalidateCache(@"Buildings\Brewery");
                 breweryTexture = Helper.Content.Load<Texture2D>($@"assets/{ Game1.currentSeason }_Brewery.png", ContentSource.ModFolder);
+                this.Helper.Content.InvalidateCache(@"Buildings\Brewery");
             }
             
         }
